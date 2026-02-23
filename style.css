@@ -122,7 +122,7 @@ h1, h2, h3, .serif {
 
 .hero-image {
   width: 100%;
-  aspect-ratio: 16 / 9; /* Rectangular as requested */
+  aspect-ratio: 16 / 9; /* Rectangular */
   background: #222;
   overflow: hidden;
   border-radius: 2px;
@@ -139,18 +139,18 @@ h1, h2, h3, .serif {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: flex-start; /* Align top as requested */
   padding: 100px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .section-row.reverse {
-  direction: rtl;
+  /* No direction: rtl, use grid-template-areas for cleaner mobile stack */
+  grid-template-areas: "col-img col-text";
 }
 
-.section-row.reverse .row-text {
-  direction: ltr;
-}
+.section-row.reverse .row-image { grid-area: col-img; }
+.section-row.reverse .row-text { grid-area: col-text; }
 
 .section-label {
   font-size: 0.75rem;
@@ -301,7 +301,11 @@ h1, h2, h3, .serif {
 
 /* MOBILE */
 @media (max-width: 1100px) {
-  .hero, .section-row { grid-template-columns: 1fr; gap: 40px; }
+  .hero, .section-row { 
+    grid-template-columns: 1fr; 
+    gap: 40px; 
+    grid-template-areas: none !important; 
+  }
   .section-row.reverse { direction: ltr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
