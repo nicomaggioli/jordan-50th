@@ -3,89 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jordan's 50th | Sprout Studios Boston</title>
+  <title>Jordan's 50th | Sprout Studios</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-content">
-      <div class="logo-circle">J</div>
+      <div class="logo-container">
+        <div class="logo-circle"><span>J</span></div>
+      </div>
       <div class="nav-links">
-        <a href="index.html" class="active">The Event</a>
+        <a href="#hero">The Event</a>
         <a href="#agenda">Agenda</a>
         <a href="#location">Location</a>
         <a href="#lodging">Lodging</a>
       </div>
-      <a href="#rsvp" class="btn-cta">Let's Celebrate</a>
+      <a href="#rsvp" class="btn-cta">Let's Chat</a>
     </div>
   </nav>
 
   <main class="container">
     
     <!-- Hero Section -->
-    <header class="hero">
-      <span class="section-label">JORDAN 50th</span>
-      <h1>Five decades of wisdom, distilled into one night.</h1>
-      <p>Celebrating Michael Jordan Anderson's 50th Birthday. A milestone evening at Sprout Studios Boston.</p>
+    <header id="hero" class="hero">
+      <div class="hero-text">
+        <span class="section-label">JORDAN 50th</span>
+        <h1>
+          <span>Five decades of</span>
+          <span>wisdom distilled</span>
+          <span>into one night.</span>
+        </h1>
+        <p style="margin-top: 40px; font-size: 1.1rem; color: #999; max-width: 450px;">
+          Celebrating Michael Jordan Anderson's milestone 50th birthday at Sprout Studios Boston.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=2038" alt="Jordan as a Kid">
+      </div>
     </header>
 
-    <!-- Content Section (Sketch Flow) -->
-    <div class="sketch-content">
-      
-      <!-- Agenda Section -->
-      <section id="agenda" class="sketch-section">
-        <h2 class="section-label">ADGENDA</h2>
-        <div class="carousel-container">
-          <div class="nav-arrow left">‹</div>
-          <div class="carousel-box">
-            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2070" alt="Celebration Agenda">
-          </div>
-          <div class="nav-arrow right">›</div>
+    <!-- Agenda Section -->
+    <section id="agenda" class="sketch-section">
+      <span class="section-label">ADGENDA</span>
+      <div class="content-box">
+        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2070" alt="Agenda">
+        <div class="arrow-overlay">
+          <div class="arrow">‹</div>
+          <div class="arrow">›</div>
         </div>
-        <div class="section-text">
-          <p>An evening of fine dining, storied tributes, and live jazz. We begin with cocktails at 7:00 PM followed by a curated three-course experience and midnight celebrations.</p>
-        </div>
-      </section>
+      </div>
+      <div class="section-info">
+        <p>A curated evening featuring an opening cocktail hour, followed by a multi-course dinner and live jazz tributes to five decades of achievement.</p>
+      </div>
+    </section>
 
-      <!-- Location Section -->
-      <section id="location" class="sketch-section">
-        <h2 class="section-label">LOCATION</h2>
-        <div class="map-box">
-          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2066" alt="Location Map">
-          <div class="box-overlay">
-            <h3 class="serif">SPROUT STUDIOS</h3>
-            <p>BOSTON, MA</p>
-          </div>
+    <!-- Location Section -->
+    <section id="location" class="sketch-section">
+      <span class="section-label">LOCATION</span>
+      <div class="content-box map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.775837651762!2d-71.0664879234125!3d42.34538803576779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7267104b2b%3A0xe67756f0814421b5!2sSprout%20Studios!5e0!3m2!1sen!2sus!4v1708726500000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="box-overlay">
+          <h3 class="serif">SPROUT STUDIOS</h3>
+          <p>BOSTON, MA</p>
         </div>
-        <div class="section-text">
-          <p>Held at the heart of the SoWa Art District. Sprout Studios offers an intimate, industrial-chic setting at 450 Harrison Ave, perfect for a golden jubilee.</p>
-        </div>
-      </section>
+      </div>
+      <div class="section-info">
+        <p>Located in the heart of the SoWa Art District. An industrial-chic space designed for creativity and connection.</p>
+      </div>
+    </section>
 
-      <!-- Lodging Section -->
-      <section id="lodging" class="sketch-section">
-        <h2 class="section-label">LODGING</h2>
-        <div class="carousel-container">
-          <div class="nav-arrow left">‹</div>
-          <div class="carousel-box">
-            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070" alt="Encore Boston Harbor">
-          </div>
-          <div class="nav-arrow right">›</div>
+    <!-- Lodging Section -->
+    <section id="lodging" class="sketch-section">
+      <span class="section-label">LODGING</span>
+      <div class="content-box">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070" alt="Lodging">
+        <div class="arrow-overlay">
+          <div class="arrow">‹</div>
+          <div class="arrow">›</div>
         </div>
-        <div class="section-text">
-          <p>Preferred accommodations have been arranged at the Encore Boston Harbor. Please reference the "Jordan 50" block when booking your stay for the preferred rate.</p>
-        </div>
-      </section>
-
-    </div>
+      </div>
+      <div class="section-info">
+        <p>Special room blocks have been secured at the Encore Boston Harbor. Please reference the "Jordan 50" celebration when booking.</p>
+      </div>
+    </section>
 
   </main>
 
-  <!-- Footer / RSVP Section (Sprout Style) -->
-  <footer class="footer-top">
+  <!-- Footer -->
+  <footer id="rsvp" class="footer-top">
     <div class="container">
       <div class="footer-grid">
         
@@ -107,22 +115,18 @@
           <p>Boston, MA 02118</p>
         </div>
 
-        <div id="rsvp" class="footer-col">
-          <h4>RSVP for the event</h4>
-          <div class="newsletter-box">
-            <input type="email" placeholder="Your Email Address">
+        <div class="footer-col">
+          <h4>RSVP</h4>
+          <div class="rsvp-box">
+            <input type="email" placeholder="Email">
             <button>→</button>
           </div>
-          <p style="margin-top:20px; font-size: 0.8rem;">By confirming, you agree to celebrate Jordan with maximum effort. Unsubscribe from aging anytime.</p>
+          <p style="margin-top: 30px; font-size: 0.8rem; line-height: 1.4;">By RSVPing, you agree to celebrate with maximum intensity. We treat your info responsibly.</p>
         </div>
 
       </div>
     </div>
   </footer>
-
-  <div class="footer-bottom container">
-    <p>© 2026 Jordan Anderson</p>
-  </div>
 
   <script src="main.js"></script>
 </body>
