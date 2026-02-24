@@ -145,10 +145,10 @@ h1, h2, h3, .serif {
 }
 
 .section-row.reverse {
-  grid-template-areas: "col-img col-text";
+  grid-template-areas: "col-media col-text";
 }
 
-.section-row.reverse .row-image { grid-area: col-img; }
+.section-row.reverse .media-column { grid-area: col-media; }
 .section-row.reverse .row-text { grid-area: col-text; }
 
 .section-label {
@@ -158,6 +158,11 @@ h1, h2, h3, .serif {
   color: var(--text-dim);
   margin-bottom: 25px;
   display: block;
+}
+
+.media-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .row-image {
@@ -176,37 +181,32 @@ h1, h2, h3, .serif {
   border: none;
 }
 
-.arrow-overlay {
-  position: absolute;
-  bottom: 0; /* Positioned at the bottom of the image */
-  right: 0;
-  width: 100px;
+.arrow-controls {
   display: flex;
-  justify-content: flex-end;
-  padding: 15px;
-  pointer-events: none;
+  justify-content: center;
+  gap: 30px; /* Nice spacing apart */
+  padding-top: 25px; /* Spacing below the image */
 }
 
 .arrow {
-  width: 32px;
-  height: 32px;
-  background: rgba(0,0,0,0.5);
+  width: 56px; /* Bigger buttons */
+  height: 56px;
+  background: rgba(255, 255, 255, 0.05);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 1.8rem; /* Bigger icons */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  pointer-events: auto;
   cursor: pointer;
-  margin-left: 10px;
   transition: all 0.3s;
 }
 
 .arrow:hover {
   border-color: var(--accent-red);
   color: var(--accent-red);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .row-text h2 {
