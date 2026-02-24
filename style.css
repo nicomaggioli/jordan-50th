@@ -288,6 +288,8 @@ h1, h2, h3, .serif {
 }
 
 @media (max-width: 768px) {
+  .container { padding: 0 16px; }
+  .nav-content { padding: 20px 16px; }
   .hero-text h1 { font-size: 3.5rem; }
   .navbar .nav-links { display: none; }
   .footer-grid { grid-template-columns: 1fr; }
